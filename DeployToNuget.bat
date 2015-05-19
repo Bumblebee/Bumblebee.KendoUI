@@ -6,12 +6,11 @@ nuget.exe update -self
 
 REM Delete Any Artifacts
 REM ====================
-cd build
-ECHO Y | DEL *.nupkg
+if exist build (
+	rd /s/q build
+)
 
-REM Build the Release Project
-REM =========================
-cd ..
+mkdir build
 
 REM Requests the API Key
 REM ====================
@@ -23,9 +22,10 @@ SET package="src\Bumblebee.KendoUI\Bumblebee.KendoUI.csproj"
 REM Create the Package
 REM ==================
 ECHO "Packing/Pushing project found here:  %package%."
-nuget.exe pack -OutputDirectory build %package% -Prop Configuration=Release
+nuget.exe pack -Build -OutputDirectory build %package% -Prop Configuration=Release
 
 REM Push to Nuget 
 REM =============
 cd build
 nuget.exe push *.nupkg
+cd ..
