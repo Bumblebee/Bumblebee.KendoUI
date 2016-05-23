@@ -14,7 +14,7 @@
     <copyright>Copyright 2014</copyright>
     <tags>acceptance ui automation system test testing kendo</tags>
     <dependencies>
-      <dependency id="Bumblebee.Automation" version="1.0.7" />
+      <dependency id="Bumblebee.Automation" version="1.2" />
     </dependencies>
   </metadata>
 </package>
