@@ -27,5 +27,5 @@ nuget.exe pack -Build -OutputDirectory build %package% -Prop Configuration=Relea
 REM Push to Nuget 
 REM =============
 cd build
-nuget.exe push Bumblebee.Automation.KendoUI.*.nupkg -s https://www.nuget.org/
+nuget.exe push Bumblebee.Automation.KendoUI.*.nupkg -Source https://www.nuget.org/api/v2/package
 cd ..
