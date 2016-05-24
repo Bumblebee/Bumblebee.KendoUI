@@ -10,7 +10,8 @@
     <projectUrl>https://github.com/patrickherrmann/Bumblebee</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>$description$</description>
-    <releaseNotes>First release of Bumblebee.Automation for Kendo UI controls.  This release includes the drop down list, date picker, multi-select, and numeric textbox.</releaseNotes>
+    <releaseNotes>* Upgraded to 1.2 version of Bumblebee framework and now support Press() method of various TextBox controls.
+      * First release of Bumblebee.Automation for Kendo UI controls.  This release includes the drop down list, date picker, multi-select, and numeric textbox.</releaseNotes>
     <copyright>Copyright 2014</copyright>
     <tags>acceptance ui automation system test testing kendo</tags>
     <dependencies>
