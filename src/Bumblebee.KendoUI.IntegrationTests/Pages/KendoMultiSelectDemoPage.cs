@@ -14,9 +14,6 @@ namespace Bumblebee.KendoUI.IntegrationTests.Pages
 		{
 		}
 
-		public ISelectBox<KendoMultiSelectDemoPage> Movies
-		{
-			get { return new KendoMultiSelect<KendoMultiSelectDemoPage>(this, By.Id("movies")); }
-		}
+		public ISelectBox<KendoMultiSelectDemoPage> Movies => new KendoMultiSelect<KendoMultiSelectDemoPage>(this, By.Id("movies"));
 	}
 }

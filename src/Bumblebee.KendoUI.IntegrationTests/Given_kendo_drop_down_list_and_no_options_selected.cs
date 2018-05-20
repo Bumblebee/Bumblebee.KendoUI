@@ -21,7 +21,7 @@ namespace Bumblebee.KendoUI.IntegrationTests
 		public void Init()
 		{
 			Threaded<Session>
-				.With<InternetExplorer>()
+				.With<Chrome>()
 				.NavigateTo<KendoDropDownListDemoPage>(Url);
 		}
 
