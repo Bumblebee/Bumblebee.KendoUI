@@ -43,8 +43,8 @@ namespace Bumblebee.KendoUI
 			get
 			{
 				// Kendo hides the element in the list and creates a new item in another list.
-				var selectedAttribute = Tag.GetAttribute("style");
-				return selectedAttribute != null && selectedAttribute == "display: none;";
+				var selectedAttribute = Tag.GetAttribute("aria-selected");
+				return selectedAttribute != null && selectedAttribute == "true";
 			}
 		}
 	}

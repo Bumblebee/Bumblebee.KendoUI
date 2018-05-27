@@ -10,7 +10,7 @@ using OpenQA.Selenium;
 
 namespace Bumblebee.KendoUI
 {
-	[DebuggerDisplay("KendoNumericTextBox {ToString}")]
+    [DebuggerDisplay("KendoNumericTextBox {ToString}")]
 	public class KendoNumericTextBox : TextField, INumericField
 	{
 		public KendoNumericTextBox(IBlock parent, By by) : base(parent, by)
@@ -58,7 +58,7 @@ namespace Bumblebee.KendoUI
 
 		private void EnsureValueIsUpdated(IWebElement fakeElement)
 		{
-			Tag.FindElement(By.XPath("../../../..")).Click();
+			Tag.SendKeys(Keys.Tab);
 			fakeElement.Click();
 		}
 
