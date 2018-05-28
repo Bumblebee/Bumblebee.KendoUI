@@ -2,6 +2,21 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <PackageId>Bumblebee.Automation.KendoUI</PackageId>
+    <Version>0.3.0</Version>
+    <Authors>Patrick Herrmann, John Hammerlund, Todd Meinershagen, Christian Droulers</Authors>
+    <Company>Patrick Herrmann, John Hammerlund, Todd Meinershagen, Christian Droulers</Company>
+    <Description>Implementation of certain controls for the Kendo UI library.</Description>
+    <Copyright>Copyright © 2014</Copyright>
+    <PackageLicenseUrl>https://github.com/Bumblebee/Bumblebee.KendoUI/blob/master/LICENSE</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/bumblebee/bumblebee</PackageProjectUrl>
+    <PackageIconUrl>https://avatars1.githubusercontent.com/u/10162916?v=3&amp;s=100</PackageIconUrl>
+    <RepositoryUrl>https://github.com/Bumblebee/Bumblebee.KendoUI</RepositoryUrl>
+    <RepositoryType>github</RepositoryType>
+    <PackageTags>acceptance ui automation system test testing kendo</PackageTags>
+    <PackageReleaseNotes>* Upgraded to Net Standard component and support 1.3 version of Bumblebee framework.
+* Upgraded to 1.2 version of Bumblebee framework and now support Press() method of various TextBox controls.
+* First release of Bumblebee.Automation for Kendo UI controls.  This release includes the drop down list, date picker, multi-select, and numeric textbox.</PackageReleaseNotes>
   </PropertyGroup>
 
   <ItemGroup>
